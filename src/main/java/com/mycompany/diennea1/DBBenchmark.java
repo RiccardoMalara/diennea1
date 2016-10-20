@@ -26,7 +26,7 @@ public class DBBenchmark {
         int testSize = 10000;
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");        
         String connectionString = "jdbc:sqlserver://ASUS\\SQLEXPRESS;databaseName=diennea;user=alpha;password=alpha1";
-
+        
         try(Connection connection = DriverManager.getConnection(connectionString))
         {   
             connection.setAutoCommit(false);
